@@ -2,24 +2,17 @@ FROM ruby
 
 CMD ["echo @@@@@@@@@@@@@@@@@@@@@@@@@@@"]
 
-CMD [""]
+CMD ["echo download project from git"]
 RUN git clone https://github.com/ivoneijr/simple-sinatra.git
 
-CMD [""]
-RUN ls -la
-
-CMD [""]
+CMD ["echo define /simple sinatra workdir"]
 WORKDIR "/simple-sinatra"
 
-CMD [""]
+CMD ["echo simple-sinatra list files"]
 RUN ls -la
 
-
-CMD [""]
 RUN bundle install
+CMD ["echo Bundle OK"]
 
-CMD [""]
-RUN rackup -o 0.0.0.0
 
-CMD ["echo @@@@@@@@@@@@@@@@@@@@@@@@@@@"]
 
