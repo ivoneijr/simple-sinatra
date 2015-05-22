@@ -2,22 +2,25 @@ FROM ruby
 
 CMD ["echo @@@@@@@@@@@@@@@@@@@@@@@@@@@"]
 
-CMD ["echo 1"]
+CMD [""]
 RUN git clone https://github.com/ivoneijr/simple-sinatra.git
 
-CMD ["echo 2"]
+CMD [""]
 RUN ls -la
 
-CMD ["echo 3"]
+CMD [""]
 RUN cd /simple-sinatra
+RUN cd simple-sinatra/
+RUN cd \simple-sinatra
 
-CMD ["echo 4"]
+
+CMD [""]
 RUN ls -la
 
-CMD ["echo 5"]
+CMD [""]
 RUN sudo bundle install
 
-CMD ["echo 6"]
+CMD [""]
 RUN rackup -o 0.0.0.0
 
 CMD ["echo @@@@@@@@@@@@@@@@@@@@@@@@@@@"]
