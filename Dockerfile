@@ -9,19 +9,8 @@ CMD [""]
 RUN ls -la
 
 CMD [""]
-RUN cd /simple-sinatra
-RUN cd simple-sinatra/
-RUN cd \simple-sinatra
-
+WORKDIR "/simple-sinatra"
 
 CMD [""]
 RUN ls -la
-
-CMD [""]
-RUN sudo bundle install
-
-CMD [""]
-RUN rackup -o 0.0.0.0
-
-CMD ["echo @@@@@@@@@@@@@@@@@@@@@@@@@@@"]
 
