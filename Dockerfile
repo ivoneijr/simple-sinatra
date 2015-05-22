@@ -12,7 +12,7 @@ CMD ["echo simple-sinatra list files"]
 RUN ls -la
 
 RUN bundle install
-CMD ["echo Bundle OK"]
+
 
 
 
