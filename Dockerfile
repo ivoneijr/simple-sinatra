@@ -14,3 +14,12 @@ WORKDIR "/simple-sinatra"
 CMD [""]
 RUN ls -la
 
+
+CMD [""]
+RUN bundle install
+
+CMD [""]
+RUN rackup -o 0.0.0.0
+
+CMD ["echo @@@@@@@@@@@@@@@@@@@@@@@@@@@"]
+
