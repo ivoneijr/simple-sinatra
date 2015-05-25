@@ -15,4 +15,5 @@ gem 'rack-cors', '~> 0.4.0', require: 'rack/cors'
 gem 'eventmachine', '~> 1.0.7'
 
 # A fast and very simple Ruby web server
-gem 'thin', '~> 1.6.3'
+# gem 'thin', '~> 1.6.3'
+gem 'thin'
