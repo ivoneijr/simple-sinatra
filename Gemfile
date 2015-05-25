@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-ruby "2.2.2"
+ruby "1.9.3"
 
 # Use Sinatra
 gem 'sinatra', '~> 1.4.6'
